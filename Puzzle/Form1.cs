@@ -23,6 +23,7 @@ namespace Puzzle
         {
             InitializeComponent();
             initGame();
+            gameTimer.Interval = 1000;
         }
 
         void initGame()
@@ -61,6 +62,11 @@ namespace Puzzle
                 freeIndexes.Remove(usedIndex);
                 if (usedIndex == 8) blackIndex = i;
             }
+            gameTimer.Stop();
+            moves = 0;
+            movesLbl.Text = $"Moves made: {moves}";
+            estimatedTime = 60;
+            timeLbl.Text = "01:00";
         }
 
         void show()
@@ -82,11 +88,41 @@ namespace Puzzle
 
         private void gameTimer_Tick(object sender, EventArgs e)
         {
+            estimatedTime--;
+            int seconds = estimatedTime % 60;
+            int minutes = estimatedTime / 60;
+            timeLbl.Text = $"0{minutes}:";
+            timeLbl.Text += (seconds < 10) ? ("0" + seconds) : (seconds.ToString());
+            if (estimatedTime == 0) gameOver(isWin: false);
+        }
 
+        private void gameOver(bool isWin)
+        {
+            gameTimer.Stop();
+            MessageBox.Show(isWin ? "You win! 🥳" : "You lose! 😟");
+        }
+
+        void swap(int i, int j)
+        {
+            Image tmp = parts[i];
+            parts[i] = parts[j];
+            parts[j] = tmp;
         }
 
         private void frame1_Click(object sender, EventArgs e)
         {
+            if (blackIndex != 1 || blackIndex != 3) return;
+
+            if (blackIndex == 0) return;
+
+            //если таймер выключен - то включить (запустить)
+
+            //поменять местами элемент на позиции blackIndex и текущий (0)
+            //отобразить изменения на экране
+            //указать, что теперь blackIndex находится на позиции 0
+            //увеличить количество сделанных ходов
+            //отобразить количество ходов
+
 
         }
 

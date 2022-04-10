@@ -34,7 +34,7 @@ namespace Puzzle
             this.shuffleBtn = new System.Windows.Forms.Button();
             this.QuitBtn = new System.Windows.Forms.Button();
             this.PauseBtn = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.movesLbl = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.frame9 = new System.Windows.Forms.PictureBox();
             this.frame8 = new System.Windows.Forms.PictureBox();
@@ -65,7 +65,7 @@ namespace Puzzle
             this.timeLbl.Name = "timeLbl";
             this.timeLbl.Size = new System.Drawing.Size(300, 65);
             this.timeLbl.TabIndex = 2;
-            this.timeLbl.Text = "00:01:00";
+            this.timeLbl.Text = "01:00";
             this.timeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // shuffleBtn
@@ -97,15 +97,15 @@ namespace Puzzle
             this.PauseBtn.Text = "Pause";
             this.PauseBtn.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // movesLbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(12, 442);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(174, 26);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Moves made: 0";
+            this.movesLbl.AutoSize = true;
+            this.movesLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.movesLbl.Location = new System.Drawing.Point(12, 442);
+            this.movesLbl.Name = "movesLbl";
+            this.movesLbl.Size = new System.Drawing.Size(174, 26);
+            this.movesLbl.TabIndex = 4;
+            this.movesLbl.Text = "Moves made: 0";
             // 
             // gameTimer
             // 
@@ -208,7 +208,7 @@ namespace Puzzle
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(866, 496);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.movesLbl);
             this.Controls.Add(this.PauseBtn);
             this.Controls.Add(this.QuitBtn);
             this.Controls.Add(this.shuffleBtn);
@@ -256,7 +256,7 @@ namespace Puzzle
         private System.Windows.Forms.Button shuffleBtn;
         private System.Windows.Forms.Button QuitBtn;
         private System.Windows.Forms.Button PauseBtn;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label movesLbl;
         private System.Windows.Forms.Timer gameTimer;
     }
 }
