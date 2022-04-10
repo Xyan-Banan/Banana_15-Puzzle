@@ -1,0 +1,263 @@
+﻿
+namespace Puzzle
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Обязательная переменная конструктора.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Освободить все используемые ресурсы.
+        /// </summary>
+        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Код, автоматически созданный конструктором форм Windows
+
+        /// <summary>
+        /// Требуемый метод для поддержки конструктора — не изменяйте 
+        /// содержимое этого метода с помощью редактора кода.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.timeLbl = new System.Windows.Forms.Label();
+            this.shuffleBtn = new System.Windows.Forms.Button();
+            this.QuitBtn = new System.Windows.Forms.Button();
+            this.PauseBtn = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.frame9 = new System.Windows.Forms.PictureBox();
+            this.frame8 = new System.Windows.Forms.PictureBox();
+            this.frame7 = new System.Windows.Forms.PictureBox();
+            this.frame6 = new System.Windows.Forms.PictureBox();
+            this.frame5 = new System.Windows.Forms.PictureBox();
+            this.frame4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.frame3 = new System.Windows.Forms.PictureBox();
+            this.frame2 = new System.Windows.Forms.PictureBox();
+            this.frame1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.frame9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // timeLbl
+            // 
+            this.timeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.timeLbl.Location = new System.Drawing.Point(513, 315);
+            this.timeLbl.Name = "timeLbl";
+            this.timeLbl.Size = new System.Drawing.Size(300, 65);
+            this.timeLbl.TabIndex = 2;
+            this.timeLbl.Text = "00:01:00";
+            this.timeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // shuffleBtn
+            // 
+            this.shuffleBtn.Location = new System.Drawing.Point(513, 390);
+            this.shuffleBtn.Name = "shuffleBtn";
+            this.shuffleBtn.Size = new System.Drawing.Size(75, 23);
+            this.shuffleBtn.TabIndex = 3;
+            this.shuffleBtn.Text = "Shuffle";
+            this.shuffleBtn.UseVisualStyleBackColor = true;
+            this.shuffleBtn.Click += new System.EventHandler(this.shuffleBtn_Click);
+            // 
+            // QuitBtn
+            // 
+            this.QuitBtn.Location = new System.Drawing.Point(738, 390);
+            this.QuitBtn.Name = "QuitBtn";
+            this.QuitBtn.Size = new System.Drawing.Size(75, 23);
+            this.QuitBtn.TabIndex = 3;
+            this.QuitBtn.Text = "Quit";
+            this.QuitBtn.UseVisualStyleBackColor = true;
+            this.QuitBtn.Click += new System.EventHandler(this.QuitBtn_Click);
+            // 
+            // PauseBtn
+            // 
+            this.PauseBtn.Location = new System.Drawing.Point(628, 390);
+            this.PauseBtn.Name = "PauseBtn";
+            this.PauseBtn.Size = new System.Drawing.Size(75, 23);
+            this.PauseBtn.TabIndex = 3;
+            this.PauseBtn.Text = "Pause";
+            this.PauseBtn.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(12, 442);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(174, 26);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Moves made: 0";
+            // 
+            // gameTimer
+            // 
+            this.gameTimer.Tick += new System.EventHandler(this.gameTimer_Tick);
+            // 
+            // frame9
+            // 
+            this.frame9.Location = new System.Drawing.Point(284, 284);
+            this.frame9.Name = "frame9";
+            this.frame9.Size = new System.Drawing.Size(130, 130);
+            this.frame9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.frame9.TabIndex = 1;
+            this.frame9.TabStop = false;
+            // 
+            // frame8
+            // 
+            this.frame8.Location = new System.Drawing.Point(148, 284);
+            this.frame8.Name = "frame8";
+            this.frame8.Size = new System.Drawing.Size(130, 130);
+            this.frame8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.frame8.TabIndex = 1;
+            this.frame8.TabStop = false;
+            // 
+            // frame7
+            // 
+            this.frame7.Location = new System.Drawing.Point(12, 284);
+            this.frame7.Name = "frame7";
+            this.frame7.Size = new System.Drawing.Size(130, 130);
+            this.frame7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.frame7.TabIndex = 1;
+            this.frame7.TabStop = false;
+            // 
+            // frame6
+            // 
+            this.frame6.Location = new System.Drawing.Point(284, 148);
+            this.frame6.Name = "frame6";
+            this.frame6.Size = new System.Drawing.Size(130, 130);
+            this.frame6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.frame6.TabIndex = 1;
+            this.frame6.TabStop = false;
+            // 
+            // frame5
+            // 
+            this.frame5.Location = new System.Drawing.Point(148, 148);
+            this.frame5.Name = "frame5";
+            this.frame5.Size = new System.Drawing.Size(130, 130);
+            this.frame5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.frame5.TabIndex = 1;
+            this.frame5.TabStop = false;
+            // 
+            // frame4
+            // 
+            this.frame4.Location = new System.Drawing.Point(12, 148);
+            this.frame4.Name = "frame4";
+            this.frame4.Size = new System.Drawing.Size(130, 130);
+            this.frame4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.frame4.TabIndex = 1;
+            this.frame4.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Puzzle.Properties.Resources.original;
+            this.pictureBox10.Location = new System.Drawing.Point(513, 12);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(300, 300);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 1;
+            this.pictureBox10.TabStop = false;
+            // 
+            // frame3
+            // 
+            this.frame3.Location = new System.Drawing.Point(284, 12);
+            this.frame3.Name = "frame3";
+            this.frame3.Size = new System.Drawing.Size(130, 130);
+            this.frame3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.frame3.TabIndex = 1;
+            this.frame3.TabStop = false;
+            // 
+            // frame2
+            // 
+            this.frame2.Location = new System.Drawing.Point(148, 12);
+            this.frame2.Name = "frame2";
+            this.frame2.Size = new System.Drawing.Size(130, 130);
+            this.frame2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.frame2.TabIndex = 1;
+            this.frame2.TabStop = false;
+            // 
+            // frame1
+            // 
+            this.frame1.Location = new System.Drawing.Point(12, 12);
+            this.frame1.Name = "frame1";
+            this.frame1.Size = new System.Drawing.Size(130, 130);
+            this.frame1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.frame1.TabIndex = 1;
+            this.frame1.TabStop = false;
+            this.frame1.Click += new System.EventHandler(this.frame1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(866, 496);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.PauseBtn);
+            this.Controls.Add(this.QuitBtn);
+            this.Controls.Add(this.shuffleBtn);
+            this.Controls.Add(this.timeLbl);
+            this.Controls.Add(this.frame9);
+            this.Controls.Add(this.frame8);
+            this.Controls.Add(this.frame7);
+            this.Controls.Add(this.frame6);
+            this.Controls.Add(this.frame5);
+            this.Controls.Add(this.frame4);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.frame3);
+            this.Controls.Add(this.frame2);
+            this.Controls.Add(this.frame1);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.frame9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frame1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox frame1;
+        private System.Windows.Forms.PictureBox frame4;
+        private System.Windows.Forms.PictureBox frame7;
+        private System.Windows.Forms.PictureBox frame2;
+        private System.Windows.Forms.PictureBox frame5;
+        private System.Windows.Forms.PictureBox frame8;
+        private System.Windows.Forms.PictureBox frame3;
+        private System.Windows.Forms.PictureBox frame6;
+        private System.Windows.Forms.PictureBox frame9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label timeLbl;
+        private System.Windows.Forms.Button shuffleBtn;
+        private System.Windows.Forms.Button QuitBtn;
+        private System.Windows.Forms.Button PauseBtn;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer gameTimer;
+    }
+}
+
