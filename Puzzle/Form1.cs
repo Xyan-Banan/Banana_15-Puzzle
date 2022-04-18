@@ -55,7 +55,7 @@ namespace Puzzle
             List<int> freeIndexes = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
             Random random = new Random();
 
-            for(int i = 0; i < parts.Length; i++)
+            for (int i = 0; i < parts.Length; i++)
             {
                 int usedIndex = freeIndexes[random.Next(freeIndexes.Count)];
                 parts[i] = original[usedIndex];
@@ -109,22 +109,76 @@ namespace Puzzle
             parts[j] = tmp;
         }
 
-        private void frame1_Click(object sender, EventArgs e)
+        bool checkWin() => original.SequenceEqual(parts);
+
+        void swap(int index)
         {
-            if (blackIndex != 1 || blackIndex != 3) return;
+            if (blackIndex == index) return;
 
-            if (blackIndex == 0) return;
-
-            //если таймер выключен - то включить (запустить)
-
-            //поменять местами элемент на позиции blackIndex и текущий (0)
-            //отобразить изменения на экране
-            //указать, что теперь blackIndex находится на позиции 0
-            //увеличить количество сделанных ходов
-            //отобразить количество ходов
+            if (!gameTimer.Enabled) gameTimer.Start();  //если таймер выключен - то включить (запустить)
 
 
+            swap(blackIndex, index);    //поменять местами элемент на позиции blackIndex и текущий (0)
+            show(); //отобразить изменения на экране
+
+            blackIndex = index; //указать, что теперь blackIndex находится на позиции 0
+
+            moves++;    //увеличить количество сделанных ходов
+            movesLbl.Text = $"Moves made: {moves}"; //отобразить количество ходов
+
+            if (checkWin()) gameOver(isWin: true);
         }
 
+        private void frame1_Click(object sender, EventArgs e)
+        {
+            if (blackIndex != 1 && blackIndex != 3) return;
+
+            swap(0);
+        }
+
+        private void frame2_Click(object sender, EventArgs e)
+        {
+            if (blackIndex == 0 || blackIndex == 2 || blackIndex == 4) swap(1);
+        }
+
+        private void frame3_Click(object sender, EventArgs e)
+        {
+            if (blackIndex == 1 || blackIndex == 5) swap(2);
+        }
+
+        private void frame4_Click(object sender, EventArgs e)
+        {
+            if (blackIndex == 0 || blackIndex == 4 || blackIndex == 6) swap(3);
+        }
+
+        private void frame5_Click(object sender, EventArgs e)
+        {
+            if (blackIndex == 1 || blackIndex == 3 || blackIndex == 5 || blackIndex == 7) swap(4);
+        }
+
+        private void frame6_Click(object sender, EventArgs e)
+        {
+            if (blackIndex == 2 || blackIndex == 4 || blackIndex == 8) swap(5);
+        }
+        
+        private void frame7_Click(object sender, EventArgs e)
+        {
+            if (blackIndex == 3 || blackIndex == 7) swap(6);
+        }
+
+        private void frame8_Click(object sender, EventArgs e)
+        {
+            if (blackIndex == 6 || blackIndex == 4 || blackIndex == 8) swap(7);
+        }
+
+        private void frame9_Click(object sender, EventArgs e)
+        {
+            if (blackIndex == 5 || blackIndex == 7) swap(8);
+        }
+        
+        private void PauseBtn_Click(object sender, EventArgs e)
+        {
+            gameTimer.Enabled = !gameTimer.Enabled;
+        }
     }
 }

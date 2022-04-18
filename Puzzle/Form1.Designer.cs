@@ -96,6 +96,7 @@ namespace Puzzle
             this.PauseBtn.TabIndex = 3;
             this.PauseBtn.Text = "Pause";
             this.PauseBtn.UseVisualStyleBackColor = true;
+            this.PauseBtn.Click += new System.EventHandler(this.PauseBtn_Click);
             // 
             // movesLbl
             // 
@@ -119,6 +120,7 @@ namespace Puzzle
             this.frame9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.frame9.TabIndex = 1;
             this.frame9.TabStop = false;
+            this.frame9.Click += new System.EventHandler(this.frame9_Click);
             // 
             // frame8
             // 
@@ -128,6 +130,7 @@ namespace Puzzle
             this.frame8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.frame8.TabIndex = 1;
             this.frame8.TabStop = false;
+            this.frame8.Click += new System.EventHandler(this.frame8_Click);
             // 
             // frame7
             // 
@@ -137,6 +140,7 @@ namespace Puzzle
             this.frame7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.frame7.TabIndex = 1;
             this.frame7.TabStop = false;
+            this.frame7.Click += new System.EventHandler(this.frame7_Click);
             // 
             // frame6
             // 
@@ -146,6 +150,7 @@ namespace Puzzle
             this.frame6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.frame6.TabIndex = 1;
             this.frame6.TabStop = false;
+            this.frame6.Click += new System.EventHandler(this.frame6_Click);
             // 
             // frame5
             // 
@@ -155,6 +160,7 @@ namespace Puzzle
             this.frame5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.frame5.TabIndex = 1;
             this.frame5.TabStop = false;
+            this.frame5.Click += new System.EventHandler(this.frame5_Click);
             // 
             // frame4
             // 
@@ -164,6 +170,7 @@ namespace Puzzle
             this.frame4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.frame4.TabIndex = 1;
             this.frame4.TabStop = false;
+            this.frame4.Click += new System.EventHandler(this.frame4_Click);
             // 
             // pictureBox10
             // 
@@ -183,6 +190,7 @@ namespace Puzzle
             this.frame3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.frame3.TabIndex = 1;
             this.frame3.TabStop = false;
+            this.frame3.Click += new System.EventHandler(this.frame3_Click);
             // 
             // frame2
             // 
@@ -192,6 +200,7 @@ namespace Puzzle
             this.frame2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.frame2.TabIndex = 1;
             this.frame2.TabStop = false;
+            this.frame2.Click += new System.EventHandler(this.frame2_Click);
             // 
             // frame1
             // 
